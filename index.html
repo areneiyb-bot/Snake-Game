@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Arcade</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- Game Header -->
+        <header class="game-header">
+            <h1>SNAKE <span>ARCADE</span></h1>
+            <p>Eat. Grow. Survive.</p>
+        </header>
+
+        <!-- Score Board -->
+        <section class="score-board">
+
+            <div class="score-box">
+                <span class="score-label">SCORE</span>
+                <span id="score">000</span>
+            </div>
+
+            <div class="score-box">
+                <span class="score-label">HIGH SCORE</span>
+                <span id="highScore">000</span>
+            </div>
+
+        </section>
+
+        <!-- Game Screen -->
+        <section class="game-area">
+
+            <canvas
+                id="gameCanvas"
+                width="400"
+                height="400">
+            </canvas>
+
+            <!-- Start / Game Over Overlay -->
+            <div id="gameOverlay" class="game-overlay">
+
+                <h2 id="overlayTitle">READY?</h2>
+
+                <p id="overlayMessage">
+                    Press START to begin your adventure.
+                </p>
+
+                <button id="startButton">
+                    START GAME
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Game Controls -->
+        <section class="game-controls">
+
+            <p>USE ARROW KEYS OR WASD TO MOVE</p>
+
+            <div class="mobile-controls">
+
+                <button id="upButton" aria-label="Move up">▲</button>
+
+                <div class="horizontal-controls">
+                    <button id="leftButton" aria-label="Move left">◀</button>
+                    <button id="downButton" aria-label="Move down">▼</button>
+                    <button id="rightButton" aria-label="Move right">▶</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 SNAKE ARCADE</p>
+        </footer>
+
+    </main>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
